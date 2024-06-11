@@ -15,7 +15,7 @@ public class MainApp {
             int D = 500;
             int M = 1000;
             Scanner reader=new Scanner(System.in);
-            System.out.println("lotfan vared conid :  ");
+            System.out.println("lotfan    vared conid :  ");
 
             String x = reader.nextLine();
 
