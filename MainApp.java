@@ -1,17 +1,61 @@
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.Locale;
+import java.util.Scanner;
+
 public class MainApp {
+
+
     public static void main(String[] args) {
 
+            int I = 1;
+            int V = 5;
+            int X = 10;
+            int L = 50;
+            int C = 100;
+            int D = 500;
+            int M = 1000;
+            Scanner reader=new Scanner(System.in);
+            System.out.println("lotfan vared conid :  ");
 
-        float f1 = 12.3f;
-        float f2 = 12;
-        System.out.println(f1);
-        System.out.println(f2);
-        double d1 = 123123;
-        double d2 = 124123.1231;
-        double d3 = 4765757.123333;
-        System.out.println(d1);
-        System.out.println(d2);
-        System.out.println(d3);
+            String x = reader.nextLine();
+
+            int sum = 0;
+            for (char ch : x.toCharArray()) {
+
+                int num;
+                switch (ch) {
+                    case 'I' :
+                        num=1 ;
+                        break;
+                    case 'V':
+                        num=5;
+                        break;
+                    case 'X' :
+                        num=10 ;
+                        break;
+                    case 'L' :
+                        num=50 ;
+                        break;
+                    case 'C' :
+                        num=100 ;
+                        break;
+                    case 'D' :
+                        num=500 ;
+                        break;
+                    case 'M' :
+                        num=1000 ;
+                        break;
+                    default:
+                        throw new IllegalStateException("Unexpected value: " + ch);
+                }
+
+
+                sum += num;
+
+            }
+
+            System.out.println("Your Number is " + sum);
+
 
 
     }
