@@ -2,8 +2,8 @@ package Dotin;
 
 public class main {
     public static <string> void main(String[] args) {
-        int a = f(5);
-        System.out.println( " نتبجه فاکتوریل " + a);
+        int factorial = f(5);
+        System.out.println( " result: " + factorial);
 
     }
     public static Integer f(int n) {
